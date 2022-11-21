@@ -10,7 +10,7 @@ public class Produto {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private int id;
-    private String Nproduto;
+    private String nproduto;
     private String Descricao;
     private Double valor;
 
@@ -22,10 +22,10 @@ public class Produto {
     }
 
     public String getNproduto() {
-        return Nproduto;
+        return nproduto;
     }
     public void setNproduto(String Nproduto) {
-        this.Nproduto = Nproduto;
+        this.nproduto = Nproduto;
     }
 
     public String getDescricao() {
