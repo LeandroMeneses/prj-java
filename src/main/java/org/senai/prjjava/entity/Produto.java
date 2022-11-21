@@ -1,5 +1,7 @@
 package org.senai.prjjava.entity;
 
+import java.text.NumberFormat;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -40,6 +42,7 @@ public class Produto {
     }
     public void setValor(Double valor) {
         this.valor = valor;
+        System.out.println(NumberFormat.getCurrencyInstance().format(valor));
     }
 
 }
